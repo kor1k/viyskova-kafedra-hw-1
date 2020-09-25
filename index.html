@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Перший варiант</title>
+    <style>*{font-family: sans-serif;line-height:24px;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.container{max-width:900px;margin:50px auto}.d-none{display:none!important}.hidden{overflow:hidden;opacity:0;display:none;width:0;height:0}.title-1,.title-2{text-align:center;font-size:21px;margin-bottom:20px}.subtitle{text-align:center;font-size:16px}.sign{text-align:right;margin:25px 0}.task-descr{display:flex;flex-direction:column}.task-descr p{font-size:18px}.result-part_1,.result-part_2,.result-part_3{margin-top:50px;width:100%;min-height:300px;background-position:center;background-repeat:no-repeat;background-size:contain}.result-part_1{background-image:url(https://i.ibb.co/Y70YCWx/2020-09-25-21-26-09.png)}.result-part_2{background-image:url(https://i.ibb.co/Hqv4Rwj/2020-09-25-21-26-20.png)}.result-part_3{background-image:url(https://i.ibb.co/1fv8mfr/2020-09-25-21-26-26.png)}span.bold{font-weight:600}.task-solution{font-size:21px}.cta{max-width:500px;margin:0 auto;height:auto;padding:20px 10px;font-size:22px;text-align:center;border:1px solid solid #000;border-radius:10px;background:#d3d3d3;cursor:pointer}.result{display:flex;justify-content:center;align-items:center;flex-direction:column}</style>
+</head>
+<body>
+    <div class="container">
+        <div class="title-1">Розрахунково-графічна робота з навчального предмету «Інформатизація органів військового управління»</div>
+        <div class="title-2">Тема завдання: Розробка алгоритмів розрахункових задач
+            </div>
+            <div class="subtitle">Варіант №1</div>
+        <div class="sign">Виконав: Студент 17 взводу <b>Єльський К.В.</b></div>
+        <hr>
+        <div class="task-descr">
+            <p>Варіант: <span class="bold">1</span></p>
+            <p>Dм, км: <span class="bold">108</span></p>
+            <p>Початок руху: <span class="bold">0 год 30 хв</span></p>
+            <p>Дата: <span class="bold">21.02</span></p>
+            <p>Доповідь про виконання: <span class="bold">6.00 21.02</span></p>
+            <p>Формула для розрахунку: <span class="bold">Тм =( Dм / V) + Tвт + Тп</span>,</p>
+            <p>де V – середня швидкість руху колони, км/год;</p>
+            <p>Тп – тривалість привалів, зупинок. (год);</p>
+            <p>Твт – втягування у район зосереджування, (год).</p>
+        </div>
+        <hr>
+        <div class="task-solution">
+            <p>Друга рота 3-го танкового батальйону зосереджена в районі…. Командир роти 21.02 отримав наказ від командира батальйону здійснити марш, довжиною 108 км, в район бойових дій. Екіпажі танків підготовлені на 70% (пройшли 100, 150, 250-ти кілометровий марш в базовому таборі). Вихідний рубіж пройти в 00:30, прибути в район бойових дій – 21.02 в 06:00. Марш здійснити за одним маршрутом, по грунтовій дорозі (пора року – зима – таїння снігів). </p>
+            <p>DМ = 108 км.</p>
+            <p>ТМ = 5 год 30 хв ≈ 5,5 год</p>
+            <p>TВТ = 10 хв ≈ 0,17 год (середня швидкість для танкової роти)</p>
+            <ol>
+                <li>Середня швидкість руху колони, за даних умов, становить 23 км/год. Вибираємо діапазон змінних швидкості:
+                    <p>Vmin ≤ V ≤ Vmax</p>
+                    <p>17 ≤ 23 ≤ 29</p> 
+                    <p>Вибираємо крок зміни величини у вибраному діапазоні: ΔV=2</p>
+                </li>
+                <li>Вибираємо діапазон змінних привалу:
+                    <p>Тп min ≤ Tп ≤ Tп max</p>
+                    <p>0 ≤ 30 ≤ 60</p>
+                    <p>Вибираємо крок зміни величини у вибраному діапазоні: ΔTп=10</p>
+                    <p>У результаті обрахунків отримаємо такі значення:</p>
+                    <div class="cta" id="showSolution">Кликнiть, щоб побачити значення отриманi пiсля обрахунку:</div>
+                    <div class="d-none result" id="openedSolution"><div class="result-part_1"></div><div class="result-part_2"></div><a href="solution" class="hidden"></a><div class="result-part_3"></div>
+                    <p><span class="bold">Пропозиція до рішення командиру батальйону:</span></p>
+                    <p>Враховуючи підготовку механіків водіїв танків, пору року та погодні умови пропоную здійснити марш зі швидкістю 25 км/год, при цьому сумарний час на зупинки (привали) буде дорівнювати 50 хв.</p>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <script>const _0x142b=['scrollBy','contains','toggle','showSolution','d-none','classList','getElementById','openedSolution'];(function(_0x242bc4,_0x142b79){const _0xa66538=function(_0x3e3b62){while(--_0x3e3b62){_0x242bc4['push'](_0x242bc4['shift']());}};_0xa66538(++_0x142b79);}(_0x142b,0x8c));const _0xa665=function(_0x242bc4,_0x142b79){_0x242bc4=_0x242bc4-0x0;let _0xa66538=_0x142b[_0x242bc4];return _0xa66538;};const showResult=()=>{const _0x42b0c5=_0xa665,_0x3e3b62=document[_0x42b0c5('0x2')](_0x42b0c5('0x7')),_0x2f1398=document[_0x42b0c5('0x2')](_0x42b0c5('0x3'));_0x3e3b62['onclick']=()=>{const _0x518821=_0x42b0c5;_0x2f1398['classList'][_0x518821('0x6')]('d-none'),_0x2f1398[_0x518821('0x1')][_0x518821('0x5')](_0x518821('0x0'))||window[_0x518821('0x4')](0x0,0x1869f);};};showResult();</script>
+</body>
+</html>
